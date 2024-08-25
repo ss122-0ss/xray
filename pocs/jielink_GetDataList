@@ -1,0 +1,14 @@
+name: poc-yaml-
+transport: http
+rules:
+  r0:
+    request:
+      method: GET
+      path: /report/ParkOutRecord/GetDataList
+      follow_redirects: false
+    expression: response.status == 200
+expression: r0()
+detail:
+  author: sanbao
+  links:
+    - https://wiki.shikangsi.com/post/share/7d5eb025-1c30-44b4-b609-61938f6d6c05
